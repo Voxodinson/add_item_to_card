@@ -1,0 +1,65 @@
+[
+  {
+    "id": "nike_shose_nike_dunk_low_1",
+    "name": "Nike dunk low retro",
+    "price": 115.5,
+    "best_sale": "best sale",
+    "details": {
+      "detail_header": "TRUE TO YOUR CREW",
+      "deatil_body": "Created for the hardwood but taken to the streets, the Nike Dunk Low Retro returns with crisp overlays and original team colors. This basketball icon channels '80s vibes with premium leather in the upper that looks good and breaks in even better. Modern footwear technology helps bring the comfort into the 21st century.",
+      "detail_benefit": {
+        "p_benefit_1": "Low-cut collar",
+        "p_benefit_2": "Foam insole",
+        "p_benefit_3": "Perforations on toe",
+        "p_benefit_4": "Shown: Valerian Blue/White/University Red/Valerian Blue",
+        "p_benefit_5": "Style: DD1391-400"
+      },
+      "product_detail": {
+        "p_detail_1": "Premium leather in the upper has the perfect sheen and breaks in beautifully.",
+        "p_detail_2": "The modern foam midsole offers lightweight, responsive cushioning.",
+        "p_detail_3": "A padded, low-cut collar adds a sleek look that feels comfortable.",
+        "p_detail_4": "]The rubber outsole with classic hoops pivot circle adds durability, traction and heritage style.",
+        "p_detail_5": "Bold color blocking throws it back to the original colorway inspiration: school team colors."
+      }
+    },
+
+    "sizes": {
+      "size_1": "26.5",
+      "size_2": "27",
+      "size_3": "28",
+      "size_4": "29",
+      "size_5": "29.5",
+      "size_6": "30",
+      "size_7": "31",
+      "size_8": "32",
+      "size_9": "32.5",
+      "size_10": "33",
+      "size_11": "34",
+      "size_12": "37",
+      "size_13": "39",
+      "size_14": "39.5",
+      "size_16": "40",
+      "size_17": "41",
+      "size_18": "42",
+      "size_19": "43",
+      "size_20": "44",
+      "size_15": "44.5"
+    },
+    "image": {
+      "image_1": "",
+      "image_2": "",
+      "image_3": "",
+      "slide_image": {
+        "slide_image_1": "",
+        "slide_image_2": "",
+        "slide_image_3": "",
+        "slide_image_4": "",
+        "slide_image_5": "",
+        "slide_image_6": "",
+        "slide_image_7": "",
+        "slide_image_8": "",
+        "slide_image_9": ""
+      }
+    }
+  }
+]

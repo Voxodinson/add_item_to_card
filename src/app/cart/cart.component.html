@@ -1,0 +1,92 @@
+<div
+  *ngIf="allCartProducts.length == 0"
+  class="w-full h-[100vh] flex items-center justify-center gap-10 flex-col"
+>
+  <h3 class="text-red-300 text-[3rem]">Your cart is empty!</h3>
+  <button
+    routerLink="/products"
+    class="bg-red-600 py-2 p-5 uppercase text-[1.4rem] rounded-lg text-white"
+  >
+    Shop now
+  </button>
+</div>
+
+<div class="w-full h-fit mt-2" *ngIf="allCartProducts.length != 0">
+  <div class="w-full h-fit flex items-center justify-center">
+    <table class="w-[90%] flex flex-col items-center justify-center gap-2">
+      <thead class="border-b-[1px] w-full h-[10vh] flex justify-around">
+        <tr class="w-full h-[10vh] flex justify-evenly capitalize items-center">
+          <th>No</th>
+          <th>image</th>
+          <th>company</th>
+          <th>Name</th>
+          <th>price</th>
+          <th>Quantity</th>
+          <th>total</th>
+          <th>action</th>
+        </tr>
+      </thead>
+      <tbody
+        class="border-t-[1px] w-full flex justify-around flex-col items-center gap-10"
+      >
+        <tr
+          class="w-full flex justify-evenly h-[10vh] py-[10px]"
+          *ngFor="let eachCartProduct of allCartProducts; let i = index"
+        >
+          <td>{{ i + 1 }}</td>
+          <td>
+            <div class="w-[100px] h-[100px]">
+              <img
+                src="{{ eachCartProduct.image.image_3 }}"
+                class="w-full h-full"
+              />
+            </div>
+          </td>
+          <td>{{ eachCartProduct.company }}</td>
+          <td>{{ eachCartProduct.name }}</td>
+          <td>{{ eachCartProduct.price }}</td>
+          <td>{{ eachCartProduct.quantity }}</td>
+
+          <td>
+            <button
+              (click)="removeProduct(eachCartProduct)"
+              class="bg-red-600 py-1 p-3 uppercase text-[1rem] rounded-lg text-white"
+            >
+              Remove
+            </button>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot class="flex w-full items-center flex-row-reverse py-[100px]">
+        <tr class="flex gap-3">
+          <th>
+            <button
+              (click)="removeAllCartProducts()"
+              class="bg-red-600 py-1 p-3 uppercase text-[1rem] rounded-lg text-white"
+            >
+              Remove All
+            </button>
+          </th>
+          <th>
+            <button
+              class="bg-red-600 py-1 p-3 uppercase text-[1rem] rounded-lg text-white"
+            >
+              checkout
+            </button>
+          </th>
+          <th>
+            <button
+              routerLink="/products"
+              class="bg-red-600 py-1 p-3 uppercase text-[1rem] rounded-lg text-white"
+            >
+              shop more
+            </button>
+          </th>
+          <th>
+            <span class="ml-10">Total: ${{ grandTotalPrices }}</span>
+          </th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="flex flex-wrap gap-10 p-[100px]">
+  @for (item of allitems; track allitems) {
+  <div
+    class="w-fit h-fit p-[20px] bg-white border-[1px] border-gray-700 flex flex-col gap-3"
+  >
+    <div class="w-[300px] h-[300px] object-cover">
+      <img
+        src="{{ item.image.image_1 }}"
+        alt=""
+        class="w-full h-full object-cover"
+      />
+    </div>
+    <div class="">
+      <h3 class="font-semibold capitalize text-[rem]">{{ item.name }}</h3>
+      <p class="text-red-600">
+        <span class="text-black">$</span> {{ item.price }}
+      </p>
+    </div>
+    <div class="flex gap-3 text-white">
+      <button
+        class="bg-blue-300 py-2 p-5 uppercase text-[.8rem] rounded-lg"
+        (click)="addtoCart(item)"
+      >
+        add to cart
+      </button>
+      <button class="bg-blue-300 py-2 p-5 uppercase text-[.8rem] rounded-lg">
+        booking now
+      </button>
+    </div>
+  </div>
+  }
+</div>
